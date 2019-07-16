@@ -11,58 +11,58 @@
     </div>
   </div>
   <div class="buttons">
-    <div class="btn-group" dropdown>
-      <button mat-flat-button>DASHBOARD</button>
-      <button mat-flat-button>WIDGETS</button>
-      <div class="btn-group1" dropdown placement="bottom right">
-        <button id="button-alignment" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
-          aria-controls="dropdown-alignment">
-          UI ELEMENTS <span class="caret"></span>
-        </button>
-        <ul id="dropdown-alignment" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu"
-          aria-labelledby="button-alignment">
-          <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-          <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
-          <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
-          <li class="divider dropdown-divider"></li>
-          <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul>
-      </div>
-
-      <div class="btn-group2" dropdown placement="bottom right">
-        <button id="button-alignment" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
-          aria-controls="dropdown-alignment">
-          PAGES
-          <span class="caret"></span>
-        </button>
-        <ul id="dropdown-alignment" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu"
-          aria-labelledby="button-alignment">
-          <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-          <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
-          <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
-          <li class="divider dropdown-divider"></li>
-          <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul>
-      </div>
-
-      <div class="btn-group3" dropdown placement="bottom right">
-        <button id="button-alignment" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
-          aria-controls="dropdown-alignment">
-          FORMS
-          <span class="caret"></span>
-        </button>
-        <ul id="dropdown-alignment" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu"
-          aria-labelledby="button-alignment">
-          <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-          <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
-          <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
-          <li class="divider dropdown-divider"></li>
-          <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul>
+    <button mat-flat-button (click)="dashboard=true; widget=false" (click)="goToDashboard()"
+      [ngClass]="{'onClick_beforeClick': dashboard===false,'onClick_background': dashboard===true}">DASHBOARD</button>
+    <button mat-flat-button (click)="widget=true; dashboard=false"
+      [ngClass]="{'onClick_beforeClick': widget===false,'onClick_background': widget===true}">WIDGETS</button>
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        UI ELEMENTS
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
       </div>
     </div>
-  </div>
-  <div class="divider">
-    <mat-divider> </mat-divider>
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        PAGES
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        FORMS
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        APPS
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+    <div class="divider">
+      <mat-divider> </mat-divider>
+    </div>
   </div>
 </div>
+<router-outlet></router-outlet>
+    

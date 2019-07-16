@@ -1,4 +1,7 @@
-
+.home{
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+    padding: 0.1%;
+}
 .main{
     display: flex;
     align-items: center;
@@ -28,14 +31,34 @@
 
 }
 .divider{
-    margin-top:5px;
+    margin-top:2px;
 }
 .buttons{
     margin-top:2%;
     display: flex;
     margin-left:7%;
     margin-right: 7%;;
-    align-items: stretch;
+    align-items:flex-start;
     justify-content: space-evenly;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
+.background-mad {
+    background-color: red
+}
+.color-mad {
+    color: green
+}
+
+.onClick_background{
+    background: #814eff;
+}
+.onClick_beforeClick{
+    background: white;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+      pointer-events: none;
+  }

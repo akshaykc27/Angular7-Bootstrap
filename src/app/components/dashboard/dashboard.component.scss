@@ -1,0 +1,25 @@
+.container {
+    margin-top : 5%;
+    width :80%
+}
+.newUser {
+    display:flex;
+    align-content: center;
+    flex-direction: row;
+    padding : 1.5%;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+
+
+}
+.info{
+    display:flex;
+    align-content: center;
+    flex-direction: row;
+    padding: 0;
+}
+.image {
+    margin-right: 15%
+}
+.name {
+    font-size: 60%
+}

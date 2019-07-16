@@ -1,0 +1,22 @@
+<div class="container" *ngIf = 'newUsers != undefined' >
+  <mat-card class="info" >
+    <div class="newUser">
+      <img src="../../../assets/images/sharp-people-24px.svg" alt="" class="image">
+      <div fxLayout="column" >
+          <div  class="name">{{newUsers.name}}
+
+          </div>
+             <div >
+                 {{newUsers.count}}
+             </div>
+      </div>
+    </div>
+    <div class="feedback">
+        <img src="../../../assets/images/sharp-check_circle_outline-24px.svg" alt="">
+        <span>{{feedbacks.name}}
+          {{feedbacks.count}}
+        </span>
+      </div>
+  </mat-card>
+
+</div>
