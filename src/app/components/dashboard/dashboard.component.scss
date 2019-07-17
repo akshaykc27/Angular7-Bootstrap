@@ -1,25 +1,123 @@
-.container {
-    margin-top : 5%;
-    width :80%
-}
-.newUser {
-    display:flex;
-    align-content: center;
-    flex-direction: row;
-    padding : 1.5%;
-    border-right: 1px solid rgba(0, 0, 0, 0.12);
+// .container {
+//     margin-top : 5%;
+//     width :auto
+// }
+// .contents {
+//     display:flex;
+//     align-content: center;
+//     flex-direction: row;
+//     padding : 1.5%;
+//     border-right: 1px solid rgba(0, 0, 0, 0.12);
 
 
+// }
+// .info{
+//     display:flex;
+//     // align-content: center;
+//     // flex-direction: row;
+//     padding: 0;
+//     justify-content: space-between;
+// }
+// .image {
+//     margin-right: 15%
+// }
+// .name {
+//     display: flex;
+//     font-size: 80%;
+//     align-content: center;
+//     flex-direction : row;
+
+// }
+// .count {
+//     font-size: 150%;
+// }
+// .data {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center
+    
+
+// }
+
+.page-body-wrapper {
+    background: #eff3f5;
+    padding-left: 0;
+    padding-right: 0;
 }
-.info{
-    display:flex;
-    align-content: center;
-    flex-direction: row;
-    padding: 0;
+.container-fluid {
+    width: 100%;
+    padding-right: 12.5px;
+    padding-left: 12.5px;
+    margin-right: auto;
+    margin-left: auto;
 }
-.image {
-    margin-right: 15%
+.main-panel {
+    min-height: calc(100vh - 70px);
+    width: 100%;
+    padding-right: 80.5px;
+    padding-left: 80.5px;
+    margin-right: auto;
+    margin-left: auto;
 }
-.name {
-    font-size: 60%
+.content-wrapper {
+    padding: 1.5rem 0;
+    width: 100%;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12.5px;
+    margin-left: -12.5px;
+}
+.grid-margin {
+    margin-bottom: 25px;
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.card {
+    border: 1px solid #d5dcec;
+    border-radius: 0px;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12.5px;
+    margin-left: -12.5px;
+}
+.card-statistics .card-col {
+    border-right: 1px solid #d5dcec;
+}
+
+.card .card-body {
+    padding: 35px 25px;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.flex-sm-row {
+    flex-direction: row !important;
+}
+.icon-lg {
+    font-size: 2.5rem;
+}
+.text-primary {
+    color: #464de4 !important;
 }

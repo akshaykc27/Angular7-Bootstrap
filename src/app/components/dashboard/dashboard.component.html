@@ -1,22 +1,145 @@
-<div class="container" *ngIf = 'newUsers != undefined' >
+<div class="container-fluid page-body-wrapper">
+  <div class="main-panel">
+    <div class="content-wrapper">
+      <div class="row">
+        <div class="col-12 grid-margin">
+          <div class="card card-statistics">
+            <div class="row">
+              <div class="card-col col-xl-3 col-lg-3 col-md-3 col-6">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                      <i class="mdi mdi-account-multiple-outline text-primary mr-0 mr-sm-4 icon-lg"></i>
+                      <div class="wrapper text-center text-sm-left">
+                        <p class="card-text mb-0">{{newUsers.name}}</p>
+                        <div class="fluid-container">
+                          <h3 class="card-title mb-0">{{newUsers.count}}</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="card-col col-xl-3 col-lg-3 col-md-3 col-6">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                      <i class="mdi mdi-checkbox-marked-circle-outline text-primary mr-0 mr-sm-4 icon-lg"></i>
+                      <div class="wrapper text-center text-sm-left">
+                        <p class="card-text mb-0">{{feedbacks.name}}</p>
+                        <div class="fluid-container">
+                          <h3 class="card-title mb-0">{{feedbacks.count}}</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="card-col col-xl-3 col-lg-3 col-md-3 col-6">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                      <i class="mdi mdi-trophy-outline text-primary mr-0 mr-sm-4 icon-lg"></i>
+                      <div class="wrapper text-center text-sm-left">
+                        <p class="card-text mb-0">{{employees.name}}</p>
+                        <div class="fluid-container">
+                          <h3 class="card-title mb-0">{{employees.count}}</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="card-col col-xl-3 col-lg-3 col-md-3 col-6">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                      <i class="mdi mdi-target text-primary mr-0 mr-sm-4 icon-lg"></i>
+                      <div class="wrapper text-center text-sm-left">
+                        <p class="card-text mb-0">{{sales.name}}</p>
+                        <div class="fluid-container">
+                          <h3 class="card-title mb-0">{{sales.count}}</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container" *ngIf = 'newUsers != undefined' >
   <mat-card class="info" >
-    <div class="newUser">
+    <div class="contents">
       <img src="../../../assets/images/sharp-people-24px.svg" alt="" class="image">
       <div fxLayout="column" >
-          <div  class="name">{{newUsers.name}}
-
-          </div>
-             <div >
-                 {{newUsers.count}}
-             </div>
+          <div  class="name">{{newUsers.name}}</div>
+             <div class="count"> {{newUsers.count}} </div>
       </div>
     </div>
-    <div class="feedback">
-        <img src="../../../assets/images/sharp-check_circle_outline-24px.svg" alt="">
-        <span>{{feedbacks.name}}
-          {{feedbacks.count}}
-        </span>
+    <div class="contents">
+        <img src="../../../assets/images/sharp-check_circle_outline-24px.svg" class="image">
+        <div class="data" >
+          <div  class="name">{{feedbacks.name}}
+
+          </div>
+             <div class="count" >
+                 {{feedbacks.count}}
+             </div>
       </div>
+      </div>
+      <div class="contents">
+        <img src="../../../assets/images/sharp-check_circle_outline-24px.svg" class="image">
+        <div fxLayout="column" >
+          <div  class="name">{{employees.name}}
+
+          </div>
+             <div class="count" >
+                 {{employees.count}}
+             </div>
+      </div>
+      </div>   
+      <div class="contents">
+        <img src="../../../assets/images/sharp-check_circle_outline-24px.svg" class="image">
+        <div fxLayout="column" >
+          <div  class="name">{{sales.name}}
+
+          </div>
+             <div class="count" >
+                 {{sales.count}}
+             </div>
+      </div>
+      </div>   
   </mat-card>
 
-</div>
+</div> -->
+
+
+<!-- <div>
+  <div class="container-fluid">
+       <div class="row">
+      <div class="col-sm-3" >users
+     <img src="../../../assets/images/sharp-people-24px.svg">
+      </div>
+      <div class="col-sm-3">contacts</div>
+      <div class="col-sm-3">.col-sm-3</div>
+      <div class="col-sm-3">.col-sm-3</div>
+    </div>
+  </div>
+</div> -->
+
