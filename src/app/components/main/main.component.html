@@ -1,5 +1,5 @@
 <div class="home">
-  <div class="main">
+  <div class="main ml-5 mr-5 mb-3">
     <img src="../../../assets/images/liberty logo.svg" class="img">
     <div class="search">
       <form class="form-inline my-2 my-lg-0">
@@ -7,11 +7,15 @@
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       </form>
       <img src="../../../assets//images/outline-notification_important-24px.svg">
+      
       <button mat-mini-fab color="accent">A</button>
+      <!-- <button>
+        <mat-icon class="menu">menu</mat-icon>
+      </button> -->
     </div>
   </div>
   <div class="buttons">
-    <button mat-flat-button (click)="dashboard=true; widget=false" (click)="goToDashboard()"
+    <button mat-flat-button class="button-dashboard" (click)="dashboard=true; widget=false" (click)="goToDashboard()"
       [ngClass]="{'onClick_beforeClick': dashboard===false,'onClick_background': dashboard===true}">DASHBOARD</button>
     <button mat-flat-button (click)="widget=true; dashboard=false"
       [ngClass]="{'onClick_beforeClick': widget===false,'onClick_background': widget===true}">WIDGETS</button>
@@ -65,4 +69,3 @@
   </div>
 </div>
 <router-outlet></router-outlet>
-    

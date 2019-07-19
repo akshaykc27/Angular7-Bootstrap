@@ -69,6 +69,7 @@
           </div>
         </div>
       </div>
+      <!--=========================> cards <=========================================  -->
       <div class="row">
         <div class="col-md-4 col-sm-6 grid-margin stretch-card">
           <div class="card text-center">
@@ -111,6 +112,21 @@
                 <p class="mb-4">2.5% change from yesterday</p>
               </div>
             </div>
+            <div>
+                <div>
+                  <div style="display: block">
+                    <canvas baseChart
+                      [datasets]="barChartData"
+                      [labels]="barChartLabels"
+                      [options]="barChartOptions"
+                      [plugins]="barChartPlugins"
+                      [legend]="barChartLegend"
+                      [chartType]="barChartType">
+                    </canvas>
+                  </div>
+                  <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button>
+                </div>
+              </div>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 grid-margin stretch-card">
@@ -118,21 +134,45 @@
             <div class="card-body">
               <div class="d-flex justify-content-between text-center mb-2">
                 <div class="wrapper">
-                    <h4>7,326</h4>
-                    <small class="text-muted">Total sales</small>
-                  </div>
-                  <div class="wrapper">
-                      <h4>9568</h4>
-                      <small class="text-muted">Open Campaign</small>
-                    </div>
+                  <h4>7,326</h4>
+                  <small class="text-muted">Total sales</small>
+                </div>
+                <div class="wrapper">
+                  <h4>9568</h4>
+                  <small class="text-muted">Open Campaign</small>
                 </div>
               </div>
-
             </div>
           </div>
-
         </div>
       </div>
+
+      <!-- =======================>>>> table <===================================-->
+      <div class="table-responsive-lg">
+        <table class="table ">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Assignee</th>
+              <th scope="col">Task Details</th>
+              <th scope="col">Payment Method</th>
+              <th scope="col">Payment Status</th>
+              <th scope="col">Amount</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let i of tableDetails" class="tbody-color">
+            <tr>
+              <td>{{i.id}}</td>
+              <td>{{i.assignee}}</td>
+              <td>{{i.taskDetails}}</td>
+              <td>{{i.paymentMethod}}</td>
+              <td>{{i.paymentStatus}}</td>
+              <td>{{i.amount}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
 
 

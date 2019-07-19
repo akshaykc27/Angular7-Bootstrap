@@ -19,5 +19,43 @@
                 "count": "61598"
             }
         }
+    ],
+
+    "tableDetails" : [
+        
+             {
+                "id": "123",
+                "assignee":"Rahul",
+                "taskDetails":"Support of theme",
+                "paymentMethod":"Credit card",
+                "paymentStatus":"Approved",
+                "amount" : "$12,245"
+            },
+             {
+                "id": "456",
+                "assignee":"Rithul",
+                "taskDetails":"Verify your email address !",
+                "paymentMethod":"Debit Card",
+                "paymentStatus":"Pending",
+                "amount" : "$12,245"
+            },
+             {
+                "id": "789",
+                "assignee":"Sudev",
+                "taskDetails":"Item support message send",
+                "paymentMethod":"Internet Banking",
+                "paymentStatus":"Declined",
+                "amount" : "$12,245"
+            },
+            {
+                "id": "568",
+                "assignee":"mithun",
+                "taskDetails":"New submission on website",
+                "paymentMethod":"Cash on delivery",
+                "paymentStatus":"Approved",
+                "amount" : "$12,245"
+            }
+
+        
     ]
 }

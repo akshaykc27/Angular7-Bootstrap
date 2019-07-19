@@ -17,6 +17,9 @@ import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ChartsModule } from 'ng2-charts';
+// For MDB Angular Free
+//import { ChartsModule, WavesModule } from 'angular-bootstrap-md'
 
 
 
@@ -44,7 +47,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     MatMenuModule,
     MatCardModule,
     BsDropdownModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

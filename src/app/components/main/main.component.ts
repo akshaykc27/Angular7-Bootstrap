@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class MainComponent implements OnInit {
   public search;
-  public dashboard: boolean = false;
+  public dashboard: boolean = true;
   public widget: boolean = false;
   public uiElements: boolean = false;
   public jsonData ;
