@@ -14,7 +14,7 @@
       </button> -->
     </div>
   </div>
-  <div class="buttons">
+  <div class="buttons mb-3" >
     <button mat-flat-button class="button-dashboard" (click)="dashboard=true; widget=false" (click)="goToDashboard()"
       [ngClass]="{'onClick_beforeClick': dashboard===false,'onClick_background': dashboard===true}">DASHBOARD</button>
     <button mat-flat-button (click)="widget=true; dashboard=false"
