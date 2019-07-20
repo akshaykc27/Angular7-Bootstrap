@@ -16,6 +16,33 @@ export class DashboardComponent implements OnInit {
   public sales;
   public tableDetails;
   
+  public chartType: string = 'line';
+
+  public chartDatasets: Array<any> = [
+    { data: [65, 59, 70, 85, 95, 75, 100],label: 'Top Products' },
+    { data: [30, 36, 25, 35, 45, 50, 60],label: 'Support Cases' }
+  ];
+
+  public chartLabels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+
+  public chartColors: Array<any> = [
+    {
+      backgroundColor: 'rgba(105, 0, 132, .2)',
+      borderColor: 'rgba(0, 10, 130, .7)',
+      borderWidth: 2,
+    },
+    {
+      backgroundColor: 'rgba(0, 137, 132, .2)',
+      borderColor: 'rgba(0, 10, 130, .7)',
+      borderWidth: 2,
+    }
+  ];
+
+  public chartOptions: any = {
+    responsive: true
+  };
+  public chartClicked(e: any): void { }
+  public chartHovered(e: any): void { }
 
   constructor(
     public dataService: DataService
