@@ -44,6 +44,31 @@ export class DashboardComponent implements OnInit {
   public chartClicked(e: any): void { }
   public chartHovered(e: any): void { }
 
+
+
+  public chartType1: string = 'bar';
+
+  public chartDatasets1: Array<any> = [
+    { data: [65, 59, 80, 81, 56, 55, 40 ,35], label: 'My First dataset' }
+  ];
+
+  public chartLabels1: Array<any> = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun'];
+
+  public chartColors1: Array<any> = [
+    {
+      backgroundColor: [
+        '#464de4','#464de4','#464de4','#464de4','#464de4','#464de4','#464de4',
+        
+      ],
+      borderColor: [
+        'grey',
+        
+      ],
+      borderWidth: 2,
+    }
+  ];
+
+
   constructor(
     public dataService: DataService
   ) { }

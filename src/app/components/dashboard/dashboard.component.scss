@@ -90,9 +90,9 @@
     width: 92px;
     height: 92px;
 }
-.rounded-circle {
-    border-radius: 50% ;
-}
+// .rounded-circle {
+//     border-radius: 50% ;
+// }
 img {
     vertical-align: middle;
     border-style: none;
@@ -111,4 +111,12 @@ p {
 }
 .graph2 {
     height: "250px";
+}
+.mat-icon svg {
+    height: 10px;
+    width: 10px;
+  }
+.img-sm {
+    width: 43px;
+    height: 43px;
 }

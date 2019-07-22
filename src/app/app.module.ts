@@ -10,7 +10,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
@@ -23,7 +22,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 // For MDB Angular Free
 import { ChartsModule, WavesModule } from 'angular-bootstrap-md'
-
+import { MatIconRegistry, MatIconModule } from '@angular/material';
+import { DomSanitizer } from '@angular/platform-browser';
 
 
 
@@ -53,9 +53,14 @@ import { ChartsModule, WavesModule } from 'angular-bootstrap-md'
     HttpClientModule,
     MDBBootstrapModule.forRoot(),
     ChartsModule,
-    WavesModule
+    WavesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(matIconRegistry: MatIconRegistry, domSanitizer: DomSanitizer){
+    matIconRegistry.addSvgIconSet(domSanitizer.bypassSecurityTrustResourceUrl('./assets/mdi.svg'));
+ }
+
+}

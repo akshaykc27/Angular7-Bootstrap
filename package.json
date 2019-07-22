@@ -21,6 +21,8 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "@mdi/angular-material": "^3.8.95",
+    "@mdi/font": "^3.8.95",
     "angular-bootstrap-md": "^7.2.0",
     "bootstrap": "^4.3.1",
     "chart.js": "^2.5.0",

@@ -2,3 +2,15 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+button.mat-menu-item {
+    line-height: 24px !important;
+  }
+  
+  a.mat-menu-item > mat-icon {
+    margin-bottom: 14px;
+  }
+  
+  .mat-icon svg {
+    height: 15px;
+    width: 15px;
+  }
